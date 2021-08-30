@@ -5,7 +5,7 @@ import sys
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from EvilBot import MONGO_DB_URI 
 from EvilBot.conf import get_int_key, get_str_key
-from pymongo import ServerSelectionTimeoutError
+
 
 
 MONGO_PORT = get_int_key("27017")
