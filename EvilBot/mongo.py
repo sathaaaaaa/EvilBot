@@ -15,7 +15,6 @@ MONGO_DB = "Evil"
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI, MONGO_PORT)[MONGO_DB]
-db = motor[MONGO_DB]
 db = client["evilbot"]
 try:
     asyncio.get_event_loop().run_until_complete(motor.server_info())
